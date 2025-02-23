@@ -1,58 +1,58 @@
-- title: Unit 0. Welcome to the course
+- title: Unidade 0. Bem-vindo ao curso
   sections:
   - local: unit0/introduction
-    title: Welcome to the course 🤗
+    title: Bem-vindo ao curso 🤗
   - local: unit0/onboarding
-    title: Onboarding
+    title: Integração
   - local: unit0/discord101
-    title: (Optional) Discord 101
+    title: (Opcional) Discord 101
 - title: Live 1. How the course works and Q&A
   sections:
   - local: communication/live1
-    title: Live 1. How the course works and Q&A
-- title: Unit 1. Introduction to Agents
+    title: Live 1. Como o curso funciona e Perguntas & Respostas
+- title: Unidade 1. Introdução aos Agentes
   sections:
   - local: unit1/introduction
-    title: Introduction
+    title: Introdução
   - local: unit1/what-are-agents
-    title: What is an Agent?
+    title: O que é um Agente?
   - local: unit1/quiz1
-    title: Quick Quiz 1
+    title: Teste Rápido 1
   - local: unit1/what-are-llms
-    title: What are LLMs?
+    title: O que são LLMs?
   - local: unit1/messages-and-special-tokens
-    title: Messages and Special Tokens
+    title: Mensagens e Tokens Especiais
   - local: unit1/tools
-    title: What are Tools?
+    title: O que são Ferramentas?
   - local: unit1/quiz2
-    title: Quick Quiz 2
+    title: Teste Rápido 2
   - local: unit1/agent-steps-and-structure
-    title: Understanding AI Agents through the Thought-Action-Observation Cycle
+    title: Entendendo os Agentes de IA através do Ciclo Pensamento-Ação-Observação
   - local: unit1/thoughts
-    title: Thought, Internal Reasoning and the Re-Act Approach
+    title: Pensamento, Raciocínio Interno e Abordagem Re-Act
   - local: unit1/actions
-    title: Actions, Enabling the Agent to Engage with Its Environment
+    title: Ações, Habilitando o Agente para Interagir com seu Ambiente
   - local: unit1/observations
-    title: Observe, Integrating Feedback to Reflect and Adapt
+    title: Observação, Integrando Feedback para Refletir e Adaptar
   - local: unit1/dummy-agent-library
-    title: Dummy Agent Library
+    title: Biblioteca de Agentes Falsos (Dummy)
   - local: unit1/tutorial
-    title: Let’s Create Our First Agent Using Smolagents
+    title: Vamos criar nosso Primeiro Agente usando Smolagents
   - local: unit1/final-quiz
-    title: Unit 1 Final Quiz
+    title: Unidade 1 Teste Final
   - local: unit1/conclusion
-    title: Conclusion
-- title: Bonus Unit 1. Fine-tuning an LLM for Function-calling
+    title: Conclusão
+- title: Bonus Unidade 1. Fazendo um Ajuste-Fino em um LLM para Chamada-de-Função (Function-Calling)
   sections:
   - local: bonus-unit1/introduction
-    title: Introduction
+    title: Introdução
   - local: bonus-unit1/what-is-function-calling
-    title: What is Function Calling?
+    title: O que é Chamada de Função (Function Calling)?
   - local: bonus-unit1/fine-tuning
-    title: Let's Fine-Tune your model for Function-calling
+    title: Vamos fazer um Ajuste-Fino no seu modelo para Chamada-de-Função
   - local: bonus-unit1/conclusion
-    title: Conclusion
-- title: When the next steps are published?
+    title: Conclusão
+- title: Quando os próximos passos serão publicados?
   sections:
   - local: communication/next-units
-    title: Next Units
+    title: Próximas Unidades
