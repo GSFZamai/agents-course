@@ -1,146 +1,146 @@
-# What is an Agent?
+# O que é um Agente?
 
 <img src="https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/whiteboard-no-check.jpg" alt="Unit 1 planning"/>
 
-By the end of this section, you'll feel comfortable with the concept of agents and their various applications in AI.
+No final desta seção, você estará confortável com o conceito de agentes e suas variadas aplicações na IA.
 
-To explain what an Agent is, let's start with an analogy.
+Para explicar o que é um Agente, vamos começar com uma analogia.
 
-## The Big Picture: Alfred The Agent
+## A Visão Geral: Alfredo, o Agente
 
-Meet Alfred. Alfred is an **Agent**.
+Conheça Alfredo. Alfredo é um **Agente**.
 
-<img src="https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/this-is-alfred.jpg" alt="This is Alfred"/>
+<img src="https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/this-is-alfred.jpg" alt="Esse é o Alfredo"/>
 
-Imagine Alfred **receives a command**, such as: "Alfred, I would like a coffee please."
+Imagine que Alfredo **recebe uma ordem**, como: "Alfredo, eu gostaria de um café por favor."
 
-<img src="https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/coffee-please.jpg" alt="I would like a coffee"/>
+<img src="https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/coffee-please.jpg" alt="Eu gostaria de um café"/>
 
-Because Alfred **understands natural language**, he quickly grasps our request.
+Como Alfredo **entende o idioma natural**, ele compreende rapidamente nossa solicitação.
 
-Before fulfilling the order, Alfred engages in **reasoning and planning**, figuring out the steps and tools he needs to:
+Antes de executar a ordem, Alfredo realiza **razão e planejamento**, descobrindo os passos e as ferramentas que precisa para:
 
-1. Go to the kitchen  
-2. Use the coffee machine  
-3. Brew the coffee  
-4. Bring the coffee back
+1. Ir à cozinha
+2. Usar a máquina de café
+3. Fazer o café
+4. Trazer o café
 
-<img src="https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/reason-and-plan.jpg" alt="Reason and plan"/>
+<img src="https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/reason-and-plan.jpg" alt="Raciocinar e planejar"/>
 
-Once he has a plan, he **must act**. To execute his plan, **he can use tools from the list of tools he knows about**. 
+Depois de ter um plano, ele **deve agir**. Para executar seu plano, **ele pode usar ferramentas da lista de ferramentas que ele conhece**.
 
-In this case, to make a coffee, he uses a coffee machine. He activates the coffee machine to brew the coffee.
+Nesse caso, para fazer o café, ele usa uma máquina de café. Ele liga a máquina de café para preparar o café.
 
-<img src="https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/make-coffee.jpg" alt="Make coffee"/>
+<img src="https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/make-coffee.jpg" alt="Fazer o café"/>
 
-Finally, Alfred brings the freshly brewed coffee to us.
+Por fim, Alfredo traz o café recém-preparado para nós.
 
-<img src="https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/bring-coffee.jpg" alt="Bring coffee"/>
+<img src="https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/bring-coffee.jpg" alt="Trazer o café"/>
 
-And this is what an Agent is: an **AI model capable of reasoning, planning, and interacting with its environment**. 
+Eis o que um Agente é: um **modelo de IA capaz de raciocinar, planejar e interagir com seu ambiente**.
 
-We call it Agent because it has _agency_, aka it has the ability to interact with the environment.
+Chamamos isso de Agente porque ele _atua_, ou seja, ele tem a habilidade de interagir com o ambiente.
 
-<img src="https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/process.jpg" alt="Agent process"/>
+<img src="https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/process.jpg" alt="Processo do Agente"/>
 
-## Let's go more formal
+## Vamos ser mais formais
 
-Now that you have the big picture, here’s a more precise definition:
+Agora que você tem a visão geral, aqui está uma definição mais precisa:
 
-> An Agent is a system that leverages an AI model to interact with its environment in order to achieve a user-defined objective. It combines reasoning, planning, and the execution of actions (often via external tools) to fulfill tasks.
+> Um Agente é um sistema que utiliza um modelo de IA para interagir com seu ambiente com o objetivo de alcançar um objetivo definido pelo usuário. Ele combina raciocínio, planejamento e a execução de ações (frequentemente por meio de ferramentas externas) para cumprir tarefas.
 
-Think of the Agent as having two main parts:
+Pense no Agente como tendo duas partes principais:
 
-1. **The Brain (AI Model)**
+1. **O Cérebro (Modelo de IA)**
 
-This is where all the thinking happens. The AI model **handles reasoning and planning**.
-It decides **which Actions to take based on the situation**.
+Aqui é onde todo o pensamento acontece. O modelo de IA **lida com o raciocínio e o planejamento**.
+Ele decide **quais Ações executar baseando-se na situação**.
 
-2. **The Body (Capabilities and Tools)**
+2. **O Corpo (Habilidades e Ferramentas)**
 
-This part represents **everything the Agent is equipped to do**.
+Esta parte representa **tudo o que o Agente está equipado para fazer**.
 
-The **scope of possible actions** depends on what the agent **has been equipped with**. For example, because humans lack wings, they can't perform the "fly" **Action**, but they can execute **Actions** like "walk", "run" ,"jump", "grab", and so on.
+O **alcance de ações possíveis** depende do que o agente **foi equipado com**. Por exemplo, porque os humanos não têm asas, eles não podem executar a **Ação** "voar", mas podem executar **Ações** como "andar", "correr", "pular", "agarrar" e assim por diante.
 
-## What type of AI Models do we use for Agents?
+## Qual tipo de modelos de IA usamos para Agentes?
 
-The most common AI model found in Agents is an LLM (Large Language Model), which  takes **Text** as an input and outputs **Text** as well.
+O modelo de IA mais comum encontrado em Agentes é um LLM (Modelo de Linguagem de Large escala), que recebe como entrada **Texto** e produz como saída também **Texto**.
 
-Well known examples are **GPT4** from **OpenAI**, **LLama** from **Meta**, **Gemini** from **Google**, etc. These models have been trained on a vast amount of text and are able to generalize well. We will learn more about LLMs in the [next section](what-are-llms).
+Exemplos bem conhecidos são o **GPT4** da **OpenAI**, o **LLama** da **Meta**, o **Gemini** da **Google**, etc. Esses modelos foram treinados em uma grande quantidade de texto e são capazes de generalizar bem. Vamos aprender mais sobre LLMs na próxima [seção](what-are-llms).
 
-<Tip>
-It's also possible to use models that accept other inputs as the Agent's core model. For example, a Vision Language Model (VLM), which is like an LLM but also understands images as input. We'll focus on LLMs for now and will discuss other options later.
-</Tip>
+<Dica>
+Também é possível usar modelos que aceitam outros tipos de entrada como um modelo central do Agente. Por exemplo, um Modelo de Linguagem Visual (VLM), que é como um LLM mas também entende imagens como entrada. Focaremos em LLMs por agora e discutiremos outras opções mais tarde.
+</Dica>
 
-## How does an AI take action on its environment?
+## Como um modelo de IA age no seu ambiente?
 
-LLMs are amazing models, but **they can only generate text**. 
+Os LLMs são modelos incríveis, mas **eles só podem gerar texto**.
 
-However, if you ask a well-known chat application like HuggingChat or ChatGPT to generate an image, they can! How is that possible?
+No entanto, se você pedir para uma aplicação bem conhecida de bate-papo como HuggingChat ou ChatGPT para gerar uma imagem, elas o farão. Como isto é possível? 
 
-The answer is that the developers of HuggingChat, ChatGPT and similar apps implemented additional functionality (called **Tools**), that the LLM can use to create images.
+A resposta para essa pergunta é que os desenvolvedores do HuggingChat, ChatGPT e aplicações semelhantes implementaram funcionalidades adicionais (chamadas **Ferramentas**), de modo que o LLM possa usar para criar imagens.
 
 <figure>
-<img src="https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/eiffel_brocolis.jpg" alt="Eiffel Brocolis"/>
-<figcaption>The model used an Image Generation Tool to generate this image.
+<img src="https://huggingface.co/datasets/agents-course/course-images/resolve/main/en/unit1/eiffel_brocolis.jpg" alt="Torre Eiffel feita com brócolis"/>
+<figcaption>O modelo usou uma Ferramenta de Geração de Imagem para gerar essa imagem.
 </figcaption>
 </figure>
 
-We will learn more about tools in the [Tools](tools) section.
+Aprenderemos mais sobre ferramentas na seção [Ferramentas](tools).
 
-## What type of tasks can an Agent do?
+## Quais tipos de tarefas um Agente pode executar?
 
-An Agent can perform any task we implement via **Tools** to complete **Actions**.
+Um Agente pode executar qualquer tarefa que implementamos por meio de **Ferramentas** para realizar **Ações**.
 
-For example, if I write an Agent to act as my personal assistant (like Siri) on my computer, and I ask it to "send an email to my Manager asking to delay today's meeting", I can give it some code to send emails. This will be a new Tool the Agent can use whenever it needs to send an email. We can write it in Python:
+Por exemplo, se eu escrever um Agente para atuar como meu assistente pessoal (como Siri) no meu computador, e eu pedí-lo para "enviar um email para meu Gerente solicitando o adiamento da reunião de hoje", posso fornece-lhe algum código para enviar emails. Isso será uma nova Ferramenta que o Agente pode usar sempre que ele precisar enviar um email. Podemos escrever esse código em Python:
 
 ```python
 def send_message_to(recipient, message):
-    """Useful to send an e-mail message to a recipient"""
+    """Útil para enviar uma mensagem de e-mail para um destinatário"""
     ...
 ```
 
-The LLM, as we'll see, will generate code to run the tool when it needs to, and thus fulfill the desired task.
+O LLM, como veremos, gerará código para executar a ferramenta sempre que necessário, e assim cumprirá a tarefa desejada.
 
 ```python
-send_message_to("Manager", "Can we postpone today's meeting?")
+send_message_to("Gerente", "Podemos adiar a reunião de hoje?")
 ```
 
-The **design of the Tools is very important and has a great impact on the quality of your Agent**. Some tasks will require very specific Tools to be crafted, while others may be solved with general purpose tools like "web_search".
+O **design das Ferramentas é muito importante e tem um grande impacto na qualidade do seu Agente**. Algumas tarefas exigirão que ferramentas muito específicas sejam criadas, enquanto outras podem ser resolvidas com ferramentas genéricas como "procura_na_web".
 
-> Note that **Actions are not the same as Tools**. An Action, for instance, can involve the use of multiple Tools to complete.
+> Observação: **Ações não são a mesma coisa que Ferramentas**. Por exemplo, uma ação pode envolver o uso de várias Ferramentas para ser concluída.
 
-Allowing an agent to interact with its environment **allows real-life usage for companies and individuals**.
+Permitir que um agente interaja com seu ambiente **permite o uso em cenários reais para empresas e indivíduos**.
 
-### Example 1: Personal Virtual Assistants
+### Exemplo 1: Assistentes Virtuais Pessoais
 
-Virtual assistants like Siri, Alexa, or Google Assistant, work as agents when they interact on behalf of users using their digital environments.
+Assistentes virtuais como Siri, Alexa ou Assistente do Google funcionam como agentes quando atuam em nome do usuário em seu ambiente digital.
 
-They take user queries, analyze context, retrieve information from databases, and provide responses or initiate actions (like setting reminders, sending messages, or controlling smart devices).
+Elas recebem consultas de usuários, analisam o contexto, recuperam informações de bancos de dados e fornecem respostas ou iniciam ações (como marcar lembretes, enviar mensagens ou controlar dispositivos inteligentes).
 
-### Example 2: Customer Service Chatbots
+### Exemplo 2: Chatbots de Atendimento ao Cliente
 
-Many companies deploy chatbots as agents that interact with customers in natural language. 
+Muitas empresas usam chatbots como agentes que interagem com clientes em linguagem natural.
 
-These agents can answer questions, guide users through troubleshooting steps, open issues in internal databases, or even complete transactions.
+Esses agentes podem responder perguntas, guiar os usuários para ajudá-los na resolução de problemas, abrir casos em bancos de dados internos ou até completar transações.
 
-Their predefined objectives might include improving user satisfaction, reducing wait times, or increasing sales conversion rates. By interacting directly with customers, learning from the dialogues, and adapting their responses over time, they demonstrate the core principles of an agent in action.
+Seus objetivos prédefinidos podem incluir: melhorar a satisfação do usuário, reduzir os tempos de espera ou aumentar as taxas de conversão de vendas. Ao interagir diretamente com os clientes, aprendendo a partir das conversas, e se adaptando às respostas ao longo do tempo, demonstram os princípios principais de um agente em ação.
 
 
-### Example 3: AI Non-Playable Character in a video game
+### Exemplo 3: Personagem Não Jogável controlado pela IA (NPC) em um jogo de console
 
-AI agents powered by LLMs can make Non-Playable Characters (NPCs) more dynamic and unpredictable.
+Agentes de IA usando LLMs podem fazer Personagens Não Jogáveis (NPCs) mais dinâmicos e imprevisíveis.
 
-Instead of following rigid behavior trees, they can **respond contextually, adapt to player interactions**, and generate more nuanced dialogue. This flexibility helps create more lifelike, engaging characters that evolve alongside the player’s actions.
+Em vez de seguir árvores de comportamento rígidas, eles podem **responder contextualmente, se adaptar às interações do jogador** e gerar diálogos mais sutis. Essa flexibilidade ajuda a criar personagens ainda mais realistas e envolventes que evoluem junto com as ações do jogador.
 
 ---
 
-To summarize, an Agent is a system that uses an AI Model (typically an LLM) as its core reasoning engine, to:
+Resumindo, um Agente é um sistema que usa um Modelo de IA (tipicamente um LLM) como seu motor de raciocínio principal para:
 
-- **Understand natural language:**  Interpret and respond to human instructions in a meaningful way.
+- **Entender o idioma natural:** Interpretar e responder a instruções humanas de uma maneira significativa.
 
-- **Reason and plan:** Analyze information, make decisions, and devise strategies to solve problems.
+- **Raciocinar e planejar:** Analisar informações, tomar decisões e elaborar estratégias para resolver problemas.
 
-- **Interact with its environment:** Gather information, take actions, and observe the results of those actions.
+- **Interagir com seu ambiente:** Recuperar informações, agir e observar os resultados dessas ações.
 
-Now that you have a solid grasp of what Agents are, let’s reinforce your understanding with a short, ungraded quiz. After that, we’ll dive into the “Agent’s brain”: the [LLMs](what-are-llms).
+Agora que você tem uma compreensão sólida do que são Agentes, vamos reforçar seus conhecimentos com um pequeno teste (sem nota). Após isso, mergulharemos no "cérebro do Agente": os [LLMs](what-are-llms).
