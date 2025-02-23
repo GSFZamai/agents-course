@@ -10,7 +10,7 @@
   sections:
   - local: communication/live1
     title: Live 1. Como o curso funciona e Perguntas & Respostas
-- title: Unidade 1. Introdução aos Agentes
+- title: Unidade 1. Introdução a Agentes
   sections:
   - local: unit1/introduction
     title: Introdução
