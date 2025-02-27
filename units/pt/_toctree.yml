@@ -1,0 +1,58 @@
+- title: Unidade 0. Bem-vindo ao curso
+  sections:
+  - local: unit0/introduction
+    title: Bem-vindo ao curso 🤗
+  - local: unit0/onboarding
+    title: Integração
+  - local: unit0/discord101
+    title: (Opcional) Discord 101
+- title: Live 1. How the course works and Q&A
+  sections:
+  - local: communication/live1
+    title: Live 1. Como o curso funciona e Perguntas & Respostas
+- title: Unidade 1. Introdução a Agentes
+  sections:
+  - local: unit1/introduction
+    title: Introdução
+  - local: unit1/what-are-agents
+    title: O que é um Agente?
+  - local: unit1/quiz1
+    title: Teste Rápido 1
+  - local: unit1/what-are-llms
+    title: O que são LLMs?
+  - local: unit1/messages-and-special-tokens
+    title: Mensagens e Tokens Especiais
+  - local: unit1/tools
+    title: O que são Ferramentas?
+  - local: unit1/quiz2
+    title: Teste Rápido 2
+  - local: unit1/agent-steps-and-structure
+    title: Entendendo os Agentes de IA através do Ciclo Pensamento-Ação-Observação
+  - local: unit1/thoughts
+    title: Pensamento, Raciocínio Interno e Abordagem Re-Act
+  - local: unit1/actions
+    title: Ações, Habilitando o Agente para Interagir com seu Ambiente
+  - local: unit1/observations
+    title: Observação, Integrando Feedback para Refletir e Adaptar
+  - local: unit1/dummy-agent-library
+    title: Biblioteca de Agentes Falsos (Dummy)
+  - local: unit1/tutorial
+    title: Vamos criar nosso Primeiro Agente usando Smolagents
+  - local: unit1/final-quiz
+    title: Unidade 1 Teste Final
+  - local: unit1/conclusion
+    title: Conclusão
+- title: Bonus Unidade 1. Fazendo um Ajuste-Fino em um LLM para Chamada-de-Função (Function-Calling)
+  sections:
+  - local: bonus-unit1/introduction
+    title: Introdução
+  - local: bonus-unit1/what-is-function-calling
+    title: O que é Chamada de Função (Function Calling)?
+  - local: bonus-unit1/fine-tuning
+    title: Vamos fazer um Ajuste-Fino no seu modelo para Chamada-de-Função
+  - local: bonus-unit1/conclusion
+    title: Conclusão
+- title: Quando os próximos passos serão publicados?
+  sections:
+  - local: communication/next-units
+    title: Próximas Unidades
